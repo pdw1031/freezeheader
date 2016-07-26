@@ -58,6 +58,9 @@ Version: 1.0.7
                     obj.container = $('#hd' + obj.id);
 
                     if (obj.header.offset() != null) {
+                    	
+                    	obj.container.css("left", obj.header.offset().left - obj.scroller.scrollLeft());
+                    	
                         if (limiteAlcancado(obj, params)) {
                             if (!copiedHeader) {
                                 cloneHeaderRow(obj);
