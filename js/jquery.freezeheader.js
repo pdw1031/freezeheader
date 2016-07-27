@@ -59,7 +59,7 @@ Version: 1.0.7
 
                     if (obj.header.offset() != null) {
                     	
-                    	obj.container.css("left", obj.header.offset().left - obj.scroller.scrollLeft());
+                    	obj.container.css("margin-left", 0 - obj.scroller.scrollLeft());
                         if (limiteAlcancado(obj, params)) {
                             if (!copiedHeader) {
                                 cloneHeaderRow(obj);
